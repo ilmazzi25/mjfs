@@ -1,232 +1,92 @@
 <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <!--=============== FAVICON ===============-->
-      <link rel="shortcut icon" href="assets/img/FAVICON.jpg" type="image/x-icon">
-
-      <!--=============== REMIXICONS ===============-->
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="">
-
-      <!--=============== CSS ===============-->
-      <link rel="stylesheet" href="assets/css/styles.css">
-
-      <title>MJ Fitness & Salute</title>
-   </head>
-   <body>
-      <!--==================== HEADER ====================-->
-      <header class="header" id="header">
-         <nav class="nav container">
-            <a href="#" class="nav__logo">
-               <span class="nav__logo-circle">MJ</span>
-               <span class="nav__logo-name">Marvin Jakob.</span>
-            </a>
-
-            <div class="nav__menu" id="nav-menu">
-               <span class="nav__title">Menu</span>
-
-               <h3 class="nav__name">Marvin</h3>
-
-               <ul class="nav__list">
-                  <li class="nav__item">
-                     <a href="#home" class="nav__link active-link">Home</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#about" class="nav__link">Su di me</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#service" class="nav__link">Servizi</a>
-                  </li>
-
-                  <li class="nav__item">
-                     <a href="#contact" class="nav__link nav__link-button">Contattami</a>
-                  </li>
-               </ul>
-
-               <!--Close button-->
-               <div class="nav__close" id="nav-close">
-                  <i class="ri-close-line"></i>
-               </div>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="MJ System — consulenza strategica per il miglioramento fisico e mentale.">
+  <link rel="shortcut icon" href="assets/img/FAVICON.jpg" type="image/jpeg">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.4.0/remixicon.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="assets/css/offer.css">
+  <title>MJ Systems</title>
+</head>
+<body>
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav__logo" aria-label="MJ System"><img src="assets/img/FAVICON.jpg" alt="Logo MJ System"></a>
+      <button class="nav__toggle" id="nav-toggle" aria-label="Apri il menu"><i class="ri-menu-3-line"></i></button>
+      <div class="nav__menu" id="nav-menu">
+        <a href="#home" class="nav__link">Home</a><a href="#about" class="nav__link">Profilo</a>
+        <a href="#service" class="nav__link">Consulenza</a><a href="#contact" class="nav__link nav__link--button">Contattami</a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="hero__frame">
+        <div class="hero__topline"><span>MJ SYSTEMS</span><span>GENOVA · ITALIA</span></div>
+        <p class="hero__greeting"><span>Corpo.</span><span>Mente.</span><span>Strategia.</span></p>
+        <img class="hero__image" src="assets/img/image0.jpeg" alt="Ritratto di Marvin Jakob">
+        <h1 class="hero__title">MARVIN<br>JAKOB</h1>
+        <div class="hero__role">CONSULENTE<br>STRATEGICO<br><em>fitness &amp; salute</em></div>
+      </div>
+    </section>
+    <section class="intro container">
+      <p>Un approccio individuale che unisce <strong>formazione medica, esperienza pratica</strong> e una visione lucida del miglioramento.</p>
+      <div class="intro__stats"><span><b>10+</b> anni di studio<br>e sperimentazione</span><span><b>7</b> anni di formazione<br>universitaria</span><span><b>1:1</b> consulenze su<br>misura</span></div>
+    </section>
+    <section class="about section" id="about">
+      <div class="container about__grid">
+        <p class="eyebrow">01 / IL PROFILO</p>
+        <h2 class="display-title">NON CERCO<br>SCORCIATOIE.<br><em>CERCO LEVE.</em></h2>
+        <div class="about__copy">
+          <div class="about__leverage">
+            <div>
+              <p class="eyebrow">IL PRINCIPIO 80/20</p>
+              <p>Cercare leve significa individuare le poche azioni che producono il maggior cambiamento. Invece di disperdere energie su tutto, analizzo il sistema per trovare il punto su cui intervenire: quello che, con uno sforzo mirato, fa muovere il resto.</p>
             </div>
-
-            <div class="nav__buttons">
-               <!--Toggle button-->
-               <div class="nav__toggle" id="nav-toggle">
-                  <i class="ri-menu-4-line"></i>
-               </div>
-            </div>
-         </nav>
-      </header>
-
-      <!--==================== MAIN ====================-->
-      <main class="main">
-         <!--==================== HOME ====================-->
-         <section class="home section" id="home">
-            <div class="home__container container grid">
-               <h1 class="home__name">
-                  Marvin Jakob
-               </h1>
-
-               <div class="home__perfil">
-                  <div class="home__image">
-                     <img src="assets/img/image0.jpeg" alt="image" class="home__img">
-                     <div class="home__shadow"></div>
-
-                     <img src="assets/img/curved-arrow.svg" alt="" class="home__arrow">
-                     <img src="assets/img/random-lines.svg" alt="" class="home__line">
-                  </div>
-               </div>
-
-               <div class="home__info">
-                  <p class="home__description">
-                     Mi presento sono MJ <b>studente di medicina al V anno,</b> consulente strategico, ex modello e fine conoscitore dei processi corporei.
-                  </p>
-
-                  <a href="#about" class="home__scroll">
-                     <div class="home__scroll-box">
-                        <i class="ri-arrow-down-s-line"></i>
-                     </div>
-
-                     <span class="home__scroll-text">Scorri giù</span>
-                  </a>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== ABOUT ====================-->
-         <section class="about section" id="about">
-            <div class="about__container container grid">
-               <h2 class="section__title-1">
-                  <span>Su di me</span>
-               </h2>
-
-               <div class="about__perfil">
-                  <div class="about__image">
-                     <img src="assets/img/image1.jpeg" alt="image" class="about__img">
-
-                     <div class="about__shadow"></div>
-
-                     <div class="geometric-box"></div>
-                     <img src="assets/img/random-lines.svg" alt="" class="about__line">
-                     <div class="about__box"></div>
-                  </div>
-               </div>
-
-               <div class="about__info">
-                  <p class="about__description">
-                     Il mio interesse per il corpo umano inizia 10 anni fa quando per la prima volta misi piede all’interno di una palestra, da quel giorno ho passato il mio tempo libero a studiare tutto ciò che trovavo riguardo al corpo umano, gli ormoni e tutti i modi possibili di usare i processi corporei a mio vantaggio.
-                     A 19 anni decisi di iscrivermi a Scienze Motorie all’Università di Genova con lo scopo di approfondire queste conoscenze, non soddisfatto delle informazioni ricevute al termine del secondo anno ho deciso di cambiare facoltà e iscrivermi a medicina che ancora frequento come studente, sono al V anno.
-                     Ad oggi ho quindi 7 anni di formazione universitaria e 10 anni di sperimentazione pratica affiancata agli studi personali.
-                     Oggi condivido parte della mia esperienza attraverso il mio canale YouTube MJ #fitness&salute e do la possibilità a chi desidera di venire in consulenza strategica 1a1 in cui aiuto i miei assistiti a perseguire il loro miglioramento fisico e mentale.
-                     Grazie al mio lavoro nel mondo della moda come modello ho affinato le mie conoscenze di miglioramento fisico per assecondare tutti gli standard che l’industria mi imponeva, inoltre ho affinato le mie conoscenze del funzionamento della mente per persuadere i miei interlocutori e migliorare lo studio universitario.                  </p>
-
-                  <div class="about__buttons">
-                     <a href="#contact" class="button">
-                        <i class="ri-send-plane-line"></i> Contattami
-                     </a>
-
-                     <a href="https://mail.google.com/mail/u/0/#search/mjmodeling%40icloud.com?compose=new" target="_blank" class="button__ghost">
-                        <i class="ri-mail-line"></i>
-                     </a>
-                  </div>
-               </div>
-            </div>
-         </section>
-
-         <!--==================== SERVICES ====================-->
-         <section class="services section" id="service">
-            <h2 class="section__title-2">
-               <span>Servizi.</span>
-            </h2>
-
-            <div class="services__container container grid">
-               <article class="services__card">
-                  <div class="services__border"></div>
-
-                  <div class="services__content">
-                     <div class="services__icon">
-                        <div class="services__box"></div>
-                        <i class="ri-graduation-cap-line"></i>
-                     </div>
-
-                     <h2 class="services__title">Consulenza</h2>
-
-                     <p class="services__description">
-                        l servizio di consulenza strategica da me offerto ha lo scopo di aiutare l’assistito nel suo percorso di miglioramento fisico e mentale, grazie a un arsenale di strategie da me affinate e consigli mirati.
-                        La consulenza si svolge in video call su Google Meet, i primi minuti vengono dedicati alla descrizione dei problemi riscontrati dall’assistito e alla presentazione personale.
-                        Poi viene avviato un timer di 30min o 1 ora in base al compenso stabilito. La consulenza si svolge in modalità All You Can Ask con unico limite il tempo.
-                        Per sfruttarla al meglio consiglio sempre di mandare una scaletta dei temi trattati fino a 24 ore prima.
-                        Il prezzo è di 70€/30 min o 120€/1 ora con la possibilità di applicare uno sconto del 50% ESCLUSIVAMENTE per la prima consulenza (35€/30 min 60€/1 ora).
-                        La consulenza include una mail riassuntiva con approfondimenti richiesti dal cliente e un check-up via mail 1 settimana dopo per feedback e supporto.
-                        <b>DISCLAIMER : Si ricorda che in quanto non ancora in possesso della laurea in Medicina e Chirurgia NON verranno fatte diagnosi né fatte prescrizioni di alcun tipo, la consulenza inoltre NON sostituisce il parere di un medico.</b>
-                     </p>
-                  </div>
-               </article>
-            </div>
-         </section>
-
-         <!--==================== CONTACT ====================-->
-         <section class="contact section" id="contact">
-            <div class="contact__container grid">
-               <div class="contact__data">
-                  <h2 class="section__title-2">
-                     <span>Contattami</span>
-                  </h2>
-
-                  <p class="contact__description-1">
-                     Per qualsiasi dubbio o chiarimento non esitare a contattarmi, mi puoi contattare tramite l'email riportata, cliccando il bottone col simbolo della posta nella sezione sopra o direttamente l'email qua sotto se permesso.
-                  </p>
-               </div>
-
-               <fdiv class="contact__mail">
-                  <h2 class="contact__title">
-                     Prenota una consulenza! scrivi a <br>👉🏻mjmodeling@icloud.com
-                  </h2>
-
-                  <form action="" class="contact__form" id="contact-form" method="post">
-                     <div class="contact__group">
-                  </form>
-               </div>
-
-               <div class="contact__social"> 
-                     <div class="contact__social-links">
-                        <a href="https://www.youtube.com/@MJfitnesssalute/videos" target="_blank" class="contact__social-link">
-                           <i class="ri-youtube-line"></i>
-                        </a>
-                     </div>
-               </div>
-         </section>
-      </main>
-
-      <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
-            <ul class="footer__links">
-               <li>
-                  <a href="#about" class="footer__link">Su di me</a>
-               </li>
-
-               <li>
-                  <a href="#service" class="footer__link">Servizi</a>
-               </li>
-
-               <li>
-                  <a href="#contact" class="footer__link">Contattami</a>
-               </li>
-            </ul>
-         </div>
-      </footer>
-
-      <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-s-line"></i>
-      </a>
-      <!--=============== MAIN JS ===============-->
-      <script src="assets/js/main.js"></script>
-      <!---PER MJ FATTO DA MJ :)-->
-   </body>
+            <img src="assets/img/principio8020.png" alt="Illustrazione del principio 80/20">
+          </div>
+          <p>Il mio interesse per il corpo umano inizia 10 anni fa quando per la prima volta misi piede all’interno di una palestra. Da quel giorno ho passato il mio tempo libero a studiare tutto ciò che trovavo riguardo al corpo umano, gli ormoni e tutti i modi possibili di usare i processi corporei a mio vantaggio.</p>
+          <p>A 19 anni decisi di iscrivermi a Scienze Motorie all’Università di Genova con lo scopo di approfondire queste conoscenze. Non soddisfatto delle informazioni ricevute al termine del secondo anno, ho deciso di cambiare facoltà e iscrivermi a Medicina, che ancora frequento come studente al V anno.</p>
+          <p>Ad oggi ho quindi 7 anni di formazione universitaria e 10 anni di sperimentazione pratica affiancata agli studi personali. Oggi condivido parte della mia esperienza attraverso il mio canale YouTube MJ Systems e do la possibilità a chi desidera di venire in consulenza strategica 1:1, in cui aiuto i miei assistiti a perseguire il loro miglioramento fisico e mentale.</p>
+          <p>Grazie al mio lavoro nel mondo della moda come modello ho affinato le mie conoscenze di miglioramento fisico per assecondare tutti gli standard che l’industria mi imponeva. Inoltre, ho approfondito il funzionamento della mente per persuadere i miei interlocutori e migliorare lo studio universitario.</p>
+          <a href="#contact" class="text-link">Parliamone <i class="ri-arrow-right-up-line"></i></a>
+        </div>
+        <figure class="about__visual"><img src="assets/img/image1.jpeg" alt="Marvin Jakob in palestra"><figcaption>ALLENAMENTO, STUDIO, ESPERIENZA.</figcaption></figure>
+      </div>
+    </section>
+    <section class="services section" id="service">
+      <div class="container">
+        <p class="eyebrow">02 / LA CONSULENZA</p>
+        <div class="services__heading"><h2 class="display-title">UN’ORA.<br><em>LA TUA DIREZIONE.</em></h2><p>Uno spazio diretto, senza formule preconfezionate: partiamo dalle tue domande e costruiamo risposte utili per il tuo percorso.</p></div>
+        <aside class="offer-banner">
+          <div><span class="offer-banner__label">OFFERTA TEMPORANEA</span><strong>PREZZI ATTUALI<br>SOLO FINO A SETTEMBRE</strong></div>
+          <p><b>30 MIN · 70€</b><b>60 MIN · 120€</b><span>Da settembre: 150€ / 250€</span></p>
+          <a href="#contact">Prenota ora <i class="ri-arrow-right-up-line"></i></a>
+        </aside>
+        <article class="service-card">
+          <div class="service-card__number">01</div>
+          <div><h3>CONSULENZA STRATEGICA 1:1</h3><p>Call su Google Meet in formula <em>All You Can Ask</em>. Hai accesso alle mie conoscenze senza un numero prestabilito di domande, compatibilmente con il tempo acquistato.</p></div>
+          <ul><li>30 minuti <strong>150€</strong></li><li>60 minuti <strong>250€</strong></li><li>Prima consulenza <strong>tariffa intera</strong></li></ul>
+          <a href="#contact" class="round-link" aria-label="Prenota una consulenza"><i class="ri-arrow-right-up-line"></i></a>
+        </article>
+        <div class="consulting-grid">
+          <div class="consulting-steps"><p class="eyebrow">COME FUNZIONA</p><ol>
+            <li><span>01</span><div><h3>Primo contatto via mail</h3><p>Presentami brevemente il quadro da analizzare: concordiamo uno slot orario e la prenotazione si conferma al ricevimento del pagamento.</p></div></li>
+            <li><span>02</span><div><h3>Call 1:1 su Google Meet</h3><p>Iniziamo con 10–15 minuti di colloquio conoscitivo. Poi parte il timer della consulenza acquistata.</p></div></li>
+            <li><span>03</span><div><h3>Follow-up</h3><p>Puoi richiedere una mail riassuntiva. Dopo circa 7 giorni facciamo un check-up via mail su azioni, criticità e risultati.</p></div></li>
+          </ol></div>
+          <div class="consulting-topics"><p class="eyebrow">COSA POSSIAMO ANALIZZARE</p><ul><li>Capacità cognitive, studio e performance</li><li>Biohacking e sistemi personali</li><li>Analisi 80/20, bottleneck e punti di leva</li><li>Problemi complessi, sociali e comportamentali</li><li>Strategie di apprendimento</li><li>Sistemi finanziari e percorsi di studio</li></ul><p class="consulting-note"><strong>Feedback diretto:</strong> indicami prima quanto vuoi che sia diretto. Un’analisi senza filtri può portare a conclusioni scomode.</p></div>
+        </div>
+        <div class="consulting-notices"><div><p class="eyebrow">AMBITO MEDICO</p><p>Non è possibile richiedere diagnosi, prescrizioni, terapie o altre prestazioni sanitarie. Il servizio non costituisce una consulenza medica.</p></div><div><p class="eyebrow">FINANZA E TRADING</p><p>Posso spiegare concetti e ragionare sui sistemi finanziari, ma non fornisco raccomandazioni finanziarie personalizzate né indicazioni operative.</p></div><div><p class="eyebrow">IN PRESENZA</p><p>È possibile concordare consulenze dal vivo. Alle tariffe si aggiungono viaggio e, se necessario, alloggio; per progetti estesi definiamo un preventivo.</p></div></div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="container contact__wrap"><p class="eyebrow">03 / CONTATTO</p><h2 class="display-title">INIZIAMO<br><em>DA UNA DOMANDA.</em></h2><div class="contact__details"><p>Per fissare una consulenza o chiedere informazioni, scrivimi direttamente.</p><a class="contact__email" href="mailto:mjmodeling@icloud.com">mjmodeling@icloud.com <i class="ri-arrow-right-up-line"></i></a><a class="youtube" href="https://www.youtube.com/@MJfitnesssalute/videos" target="_blank" rel="noopener"><i class="ri-youtube-line"></i> MJ Systems</a></div></div>
+    </section>
+  </main>
+  <footer class="footer container"><a href="#home">Torna su <i class="ri-arrow-up-line"></i></a></footer>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
